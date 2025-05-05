@@ -36,13 +36,13 @@
   <!-- Header -->
   <header class="bg-blue-700 text-white py-6">
     <div class="container mx-auto px-6">
-      <div class="flex justify-center items-center space-x-4">
+      <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
         <!-- Logo Symbol -->
         <div class="bg-blue-500 p-4 rounded-full text-white">
           <span class="text-2xl font-bold">SR</span>
         </div>
         <!-- Logo Text -->
-        <div class="text-center">
+        <div class="text-center sm:text-left">
           <h1 class="text-4xl font-extrabold">Shweta Randive</h1>
           <p class="text-lg mt-2">MBA Graduate in Finance and HR</p>
         </div>
@@ -206,14 +206,14 @@
       });
     });
 
-    // Back to Top Button
-    window.onscroll = function () {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("toTop").style.display = "block";
+    // Scroll to Top Button
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 200) {
+        document.getElementById('toTop').style.display = 'block';
       } else {
-        document.getElementById("toTop").style.display = "none";
+        document.getElementById('toTop').style.display = 'none';
       }
-    };
+    });
   </script>
 </body>
 </html>
